@@ -1,0 +1,16 @@
+<h1>Welcome to My Travel Site</h1>
+<p>This is my fun travel site.</p>
+
+<p><%= @homeland %></p>
+
+
+<ul>
+<% @countries.each do |country| %>
+	<li><%= country %></li>
+<% end %>
+</ul>
+
+<% @images.shuffle.each do |image| %>
+<%= image_tag image %>
+
+<% end %>
